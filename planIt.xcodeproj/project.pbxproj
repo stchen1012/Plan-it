@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34677CEE240DEC55D663425F /* Pods_planItTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8298AC9293A5D9127A14C3F9 /* Pods_planItTests.framework */; };
+		5927FA6A22A4070200A0CAA7 /* itineraryTripsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5927FA6922A4070100A0CAA7 /* itineraryTripsCollectionViewCell.swift */; };
+		59588C442290617E004CFA08 /* itineraryMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59588C432290617E004CFA08 /* itineraryMapViewController.swift */; };
+		5996BC93227DE80E0084748B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5996BC92227DE80D0084748B /* GoogleService-Info.plist */; };
+		59AA86A9227FB02900324E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59AA86A8227FB02900324E5F /* Assets.xcassets */; };
+		59CF7FB0228C6F0B00CC74C2 /* itineraryDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CF7FAF228C6F0B00CC74C2 /* itineraryDetailsTableViewCell.swift */; };
+		59CF7FB2228E2E9C00CC74C2 /* activityBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CF7FB1228E2E9C00CC74C2 /* activityBusiness.swift */; };
+		59D266F8227BB874001A32EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D266F7227BB874001A32EC /* AppDelegate.swift */; };
+		59D266FD227BB874001A32EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D266FB227BB874001A32EC /* Main.storyboard */; };
+		59D26702227BB875001A32EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D26700227BB875001A32EC /* LaunchScreen.storyboard */; };
+		59D2670D227BB875001A32EC /* planItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D2670C227BB875001A32EC /* planItTests.swift */; };
+		59D26718227BB875001A32EC /* planItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D26717227BB875001A32EC /* planItUITests.swift */; };
+		59D26729227CC872001A32EC /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D26728227CC872001A32EC /* user.swift */; };
+		59D2672B227CC88B001A32EC /* itinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D2672A227CC88B001A32EC /* itinerary.swift */; };
+		59D2672D227CEE88001A32EC /* activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D2672C227CEE88001A32EC /* activities.swift */; };
+		59D26731227CFDB6001A32EC /* planYourTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D26730227CFDB6001A32EC /* planYourTripViewController.swift */; };
+		59D26733227CFDE8001A32EC /* activitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D26732227CFDE8001A32EC /* activitiesViewController.swift */; };
+		59D26735227CFE0B001A32EC /* itineraryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D26734227CFE0B001A32EC /* itineraryDetailsViewController.swift */; };
+		59D26739227CFE7C001A32EC /* itineraryTripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D26738227CFE7C001A32EC /* itineraryTripsViewController.swift */; };
+		59D2673B227CFE98001A32EC /* signInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D2673A227CFE98001A32EC /* signInViewController.swift */; };
+		59D2673F227CFEB6001A32EC /* forumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D2673E227CFEB6001A32EC /* forumViewController.swift */; };
+		59D26741227CFEC0001A32EC /* createUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D26740227CFEC0001A32EC /* createUserViewController.swift */; };
+		59F96A5E22B577FA00406E81 /* SavedItineraryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F96A5D22B577FA00406E81 /* SavedItineraryDetailViewController.swift */; };
+		59F96A6022B578EC00406E81 /* savedItineraryMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F96A5F22B578EC00406E81 /* savedItineraryMapViewController.swift */; };
+		59F96A6222C7BBAC00406E81 /* savedItineraryDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F96A6122C7BBAC00406E81 /* savedItineraryDetailsTableViewCell.swift */; };
+		EC9E5E47263E43CFE81CD875 /* Pods_planIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E50ECA8EDEFA88F96A7C2D2 /* Pods_planIt.framework */; };
+		EE00CEA01CEF54180A1717F1 /* Pods_planItUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C0C0754A712B6A1C3FE685 /* Pods_planItUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59D26709227BB875001A32EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59D266EC227BB874001A32EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59D266F3227BB874001A32EC;
+			remoteInfo = planIt;
+		};
+		59D26714227BB875001A32EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59D266EC227BB874001A32EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59D266F3227BB874001A32EC;
+			remoteInfo = planIt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14653074A6816911C7A28B78 /* Pods-planIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-planIt/Pods-planIt.debug.xcconfig"; sourceTree = "<group>"; };
+		225678EB7393E6D2A4ED2BD4 /* Pods-planItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planItUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-planItUITests/Pods-planItUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		271C82CE4AF94BFF74367177 /* Pods-planItTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planItTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-planItTests/Pods-planItTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5927FA6922A4070100A0CAA7 /* itineraryTripsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itineraryTripsCollectionViewCell.swift; sourceTree = "<group>"; };
+		59588C432290617E004CFA08 /* itineraryMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itineraryMapViewController.swift; sourceTree = "<group>"; };
+		5996BC92227DE80D0084748B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		59AA86A8227FB02900324E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59CF7FAF228C6F0B00CC74C2 /* itineraryDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itineraryDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		59CF7FB1228E2E9C00CC74C2 /* activityBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activityBusiness.swift; sourceTree = "<group>"; };
+		59D266F4227BB874001A32EC /* planIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = planIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D266F7227BB874001A32EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59D266FC227BB874001A32EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59D26701227BB875001A32EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59D26703227BB875001A32EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59D26708227BB875001A32EC /* planItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = planItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D2670C227BB875001A32EC /* planItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planItTests.swift; sourceTree = "<group>"; };
+		59D2670E227BB875001A32EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59D26713227BB875001A32EC /* planItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = planItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D26717227BB875001A32EC /* planItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planItUITests.swift; sourceTree = "<group>"; };
+		59D26719227BB875001A32EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59D26728227CC872001A32EC /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		59D2672A227CC88B001A32EC /* itinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itinerary.swift; sourceTree = "<group>"; };
+		59D2672C227CEE88001A32EC /* activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activities.swift; sourceTree = "<group>"; };
+		59D26730227CFDB6001A32EC /* planYourTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planYourTripViewController.swift; sourceTree = "<group>"; };
+		59D26732227CFDE8001A32EC /* activitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activitiesViewController.swift; sourceTree = "<group>"; };
+		59D26734227CFE0B001A32EC /* itineraryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itineraryDetailsViewController.swift; sourceTree = "<group>"; };
+		59D26738227CFE7C001A32EC /* itineraryTripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itineraryTripsViewController.swift; sourceTree = "<group>"; };
+		59D2673A227CFE98001A32EC /* signInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInViewController.swift; sourceTree = "<group>"; };
+		59D2673E227CFEB6001A32EC /* forumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forumViewController.swift; sourceTree = "<group>"; };
+		59D26740227CFEC0001A32EC /* createUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createUserViewController.swift; sourceTree = "<group>"; };
+		59F96A5D22B577FA00406E81 /* SavedItineraryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItineraryDetailViewController.swift; sourceTree = "<group>"; };
+		59F96A5F22B578EC00406E81 /* savedItineraryMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savedItineraryMapViewController.swift; sourceTree = "<group>"; };
+		59F96A6122C7BBAC00406E81 /* savedItineraryDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savedItineraryDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		6B9FEF78A4E8C85CE4AA9D55 /* Pods-planItTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planItTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-planItTests/Pods-planItTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E50ECA8EDEFA88F96A7C2D2 /* Pods_planIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_planIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DF44C5AF341C5CA84699419 /* Pods-planIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-planIt/Pods-planIt.release.xcconfig"; sourceTree = "<group>"; };
+		8298AC9293A5D9127A14C3F9 /* Pods_planItTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_planItTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F0BCB751E00E98B02C1D12 /* Pods-planItUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planItUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-planItUITests/Pods-planItUITests.release.xcconfig"; sourceTree = "<group>"; };
+		95C0C0754A712B6A1C3FE685 /* Pods_planItUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_planItUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59D266F1227BB874001A32EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9E5E47263E43CFE81CD875 /* Pods_planIt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D26705227BB875001A32EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34677CEE240DEC55D663425F /* Pods_planItTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D26710227BB875001A32EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE00CEA01CEF54180A1717F1 /* Pods_planItUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2229352B284837DDFF6A0AEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14653074A6816911C7A28B78 /* Pods-planIt.debug.xcconfig */,
+				7DF44C5AF341C5CA84699419 /* Pods-planIt.release.xcconfig */,
+				271C82CE4AF94BFF74367177 /* Pods-planItTests.debug.xcconfig */,
+				6B9FEF78A4E8C85CE4AA9D55 /* Pods-planItTests.release.xcconfig */,
+				225678EB7393E6D2A4ED2BD4 /* Pods-planItUITests.debug.xcconfig */,
+				82F0BCB751E00E98B02C1D12 /* Pods-planItUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2D141555657468AF2B72C295 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E50ECA8EDEFA88F96A7C2D2 /* Pods_planIt.framework */,
+				8298AC9293A5D9127A14C3F9 /* Pods_planItTests.framework */,
+				95C0C0754A712B6A1C3FE685 /* Pods_planItUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59D266EB227BB874001A32EC = {
+			isa = PBXGroup;
+			children = (
+				59D266F6227BB874001A32EC /* planIt */,
+				59D2670B227BB875001A32EC /* planItTests */,
+				59D26716227BB875001A32EC /* planItUITests */,
+				59D266F5227BB874001A32EC /* Products */,
+				2229352B284837DDFF6A0AEE /* Pods */,
+				2D141555657468AF2B72C295 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		59D266F5227BB874001A32EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59D266F4227BB874001A32EC /* planIt.app */,
+				59D26708227BB875001A32EC /* planItTests.xctest */,
+				59D26713227BB875001A32EC /* planItUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59D266F6227BB874001A32EC /* planIt */ = {
+			isa = PBXGroup;
+			children = (
+				59D266F7227BB874001A32EC /* AppDelegate.swift */,
+				59D26727227BB8BF001A32EC /* Controller */,
+				59D26726227BB8BA001A32EC /* View */,
+				59D26725227BB8AD001A32EC /* Model */,
+				59D26700227BB875001A32EC /* LaunchScreen.storyboard */,
+				59AA86A8227FB02900324E5F /* Assets.xcassets */,
+				59D26703227BB875001A32EC /* Info.plist */,
+				5996BC92227DE80D0084748B /* GoogleService-Info.plist */,
+			);
+			path = planIt;
+			sourceTree = "<group>";
+		};
+		59D2670B227BB875001A32EC /* planItTests */ = {
+			isa = PBXGroup;
+			children = (
+				59D2670C227BB875001A32EC /* planItTests.swift */,
+				59D2670E227BB875001A32EC /* Info.plist */,
+			);
+			path = planItTests;
+			sourceTree = "<group>";
+		};
+		59D26716227BB875001A32EC /* planItUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59D26717227BB875001A32EC /* planItUITests.swift */,
+				59D26719227BB875001A32EC /* Info.plist */,
+			);
+			path = planItUITests;
+			sourceTree = "<group>";
+		};
+		59D26725227BB8AD001A32EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59D26728227CC872001A32EC /* user.swift */,
+				59D2672A227CC88B001A32EC /* itinerary.swift */,
+				59CF7FB1228E2E9C00CC74C2 /* activityBusiness.swift */,
+				59D2672C227CEE88001A32EC /* activities.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59D26726227BB8BA001A32EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59D266FB227BB874001A32EC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		59D26727227BB8BF001A32EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				59D26730227CFDB6001A32EC /* planYourTripViewController.swift */,
+				59D26732227CFDE8001A32EC /* activitiesViewController.swift */,
+				59D26734227CFE0B001A32EC /* itineraryDetailsViewController.swift */,
+				59CF7FAF228C6F0B00CC74C2 /* itineraryDetailsTableViewCell.swift */,
+				59D26738227CFE7C001A32EC /* itineraryTripsViewController.swift */,
+				5927FA6922A4070100A0CAA7 /* itineraryTripsCollectionViewCell.swift */,
+				59D2673A227CFE98001A32EC /* signInViewController.swift */,
+				59D26740227CFEC0001A32EC /* createUserViewController.swift */,
+				59D2673E227CFEB6001A32EC /* forumViewController.swift */,
+				59588C432290617E004CFA08 /* itineraryMapViewController.swift */,
+				59F96A5D22B577FA00406E81 /* SavedItineraryDetailViewController.swift */,
+				59F96A6122C7BBAC00406E81 /* savedItineraryDetailsTableViewCell.swift */,
+				59F96A5F22B578EC00406E81 /* savedItineraryMapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59D266F3227BB874001A32EC /* planIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D2671C227BB875001A32EC /* Build configuration list for PBXNativeTarget "planIt" */;
+			buildPhases = (
+				5896AA2F12A69A79835412C9 /* [CP] Check Pods Manifest.lock */,
+				59D266F0227BB874001A32EC /* Sources */,
+				59D266F1227BB874001A32EC /* Frameworks */,
+				59D266F2227BB874001A32EC /* Resources */,
+				43CAC3728F87803DDBD305AB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = planIt;
+			productName = planIt;
+			productReference = 59D266F4227BB874001A32EC /* planIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59D26707227BB875001A32EC /* planItTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D2671F227BB875001A32EC /* Build configuration list for PBXNativeTarget "planItTests" */;
+			buildPhases = (
+				FB821E8C569E1A545A491E11 /* [CP] Check Pods Manifest.lock */,
+				59D26704227BB875001A32EC /* Sources */,
+				59D26705227BB875001A32EC /* Frameworks */,
+				59D26706227BB875001A32EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59D2670A227BB875001A32EC /* PBXTargetDependency */,
+			);
+			name = planItTests;
+			productName = planItTests;
+			productReference = 59D26708227BB875001A32EC /* planItTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59D26712227BB875001A32EC /* planItUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D26722227BB875001A32EC /* Build configuration list for PBXNativeTarget "planItUITests" */;
+			buildPhases = (
+				F796D87ADE6B77572A8E047E /* [CP] Check Pods Manifest.lock */,
+				59D2670F227BB875001A32EC /* Sources */,
+				59D26710227BB875001A32EC /* Frameworks */,
+				59D26711227BB875001A32EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59D26715227BB875001A32EC /* PBXTargetDependency */,
+			);
+			name = planItUITests;
+			productName = planItUITests;
+			productReference = 59D26713227BB875001A32EC /* planItUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59D266EC227BB874001A32EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Tracy;
+				TargetAttributes = {
+					59D266F3227BB874001A32EC = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					59D26707227BB875001A32EC = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 59D266F3227BB874001A32EC;
+					};
+					59D26712227BB875001A32EC = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 59D266F3227BB874001A32EC;
+					};
+				};
+			};
+			buildConfigurationList = 59D266EF227BB874001A32EC /* Build configuration list for PBXProject "planIt" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59D266EB227BB874001A32EC;
+			productRefGroup = 59D266F5227BB874001A32EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59D266F3227BB874001A32EC /* planIt */,
+				59D26707227BB875001A32EC /* planItTests */,
+				59D26712227BB875001A32EC /* planItUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59D266F2227BB874001A32EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D26702227BB875001A32EC /* LaunchScreen.storyboard in Resources */,
+				5996BC93227DE80E0084748B /* GoogleService-Info.plist in Resources */,
+				59AA86A9227FB02900324E5F /* Assets.xcassets in Resources */,
+				59D266FD227BB874001A32EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D26706227BB875001A32EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D26711227BB875001A32EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43CAC3728F87803DDBD305AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-planIt/Pods-planIt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-planIt/Pods-planIt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5896AA2F12A69A79835412C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-planIt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F796D87ADE6B77572A8E047E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-planItUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB821E8C569E1A545A491E11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-planItTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59D266F0227BB874001A32EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D26731227CFDB6001A32EC /* planYourTripViewController.swift in Sources */,
+				59D26733227CFDE8001A32EC /* activitiesViewController.swift in Sources */,
+				59F96A6022B578EC00406E81 /* savedItineraryMapViewController.swift in Sources */,
+				59CF7FB2228E2E9C00CC74C2 /* activityBusiness.swift in Sources */,
+				59D26735227CFE0B001A32EC /* itineraryDetailsViewController.swift in Sources */,
+				5927FA6A22A4070200A0CAA7 /* itineraryTripsCollectionViewCell.swift in Sources */,
+				59D2673B227CFE98001A32EC /* signInViewController.swift in Sources */,
+				59CF7FB0228C6F0B00CC74C2 /* itineraryDetailsTableViewCell.swift in Sources */,
+				59F96A6222C7BBAC00406E81 /* savedItineraryDetailsTableViewCell.swift in Sources */,
+				59F96A5E22B577FA00406E81 /* SavedItineraryDetailViewController.swift in Sources */,
+				59D2672B227CC88B001A32EC /* itinerary.swift in Sources */,
+				59D2673F227CFEB6001A32EC /* forumViewController.swift in Sources */,
+				59D26741227CFEC0001A32EC /* createUserViewController.swift in Sources */,
+				59D26739227CFE7C001A32EC /* itineraryTripsViewController.swift in Sources */,
+				59D266F8227BB874001A32EC /* AppDelegate.swift in Sources */,
+				59D2672D227CEE88001A32EC /* activities.swift in Sources */,
+				59588C442290617E004CFA08 /* itineraryMapViewController.swift in Sources */,
+				59D26729227CC872001A32EC /* user.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D26704227BB875001A32EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D2670D227BB875001A32EC /* planItTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D2670F227BB875001A32EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D26718227BB875001A32EC /* planItUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59D2670A227BB875001A32EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59D266F3227BB874001A32EC /* planIt */;
+			targetProxy = 59D26709227BB875001A32EC /* PBXContainerItemProxy */;
+		};
+		59D26715227BB875001A32EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59D266F3227BB874001A32EC /* planIt */;
+			targetProxy = 59D26714227BB875001A32EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59D266FB227BB874001A32EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59D266FC227BB874001A32EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		59D26700227BB875001A32EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59D26701227BB875001A32EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59D2671A227BB875001A32EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59D2671B227BB875001A32EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59D2671D227BB875001A32EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14653074A6816911C7A28B78 /* Pods-planIt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94BQK5Q52L;
+				INFOPLIST_FILE = planIt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tracy.Chen.planIt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59D2671E227BB875001A32EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF44C5AF341C5CA84699419 /* Pods-planIt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94BQK5Q52L;
+				INFOPLIST_FILE = planIt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tracy.Chen.planIt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59D26720227BB875001A32EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 271C82CE4AF94BFF74367177 /* Pods-planItTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = planItTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tracy.planItTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/planIt.app/planIt";
+			};
+			name = Debug;
+		};
+		59D26721227BB875001A32EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B9FEF78A4E8C85CE4AA9D55 /* Pods-planItTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = planItTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tracy.planItTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/planIt.app/planIt";
+			};
+			name = Release;
+		};
+		59D26723227BB875001A32EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 225678EB7393E6D2A4ED2BD4 /* Pods-planItUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = planItUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tracy.planItUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = planIt;
+			};
+			name = Debug;
+		};
+		59D26724227BB875001A32EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82F0BCB751E00E98B02C1D12 /* Pods-planItUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = planItUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tracy.planItUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = planIt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59D266EF227BB874001A32EC /* Build configuration list for PBXProject "planIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D2671A227BB875001A32EC /* Debug */,
+				59D2671B227BB875001A32EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59D2671C227BB875001A32EC /* Build configuration list for PBXNativeTarget "planIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D2671D227BB875001A32EC /* Debug */,
+				59D2671E227BB875001A32EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59D2671F227BB875001A32EC /* Build configuration list for PBXNativeTarget "planItTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D26720227BB875001A32EC /* Debug */,
+				59D26721227BB875001A32EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59D26722227BB875001A32EC /* Build configuration list for PBXNativeTarget "planItUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D26723227BB875001A32EC /* Debug */,
+				59D26724227BB875001A32EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59D266EC227BB874001A32EC /* Project object */;
+}
