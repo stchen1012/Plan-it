@@ -15,7 +15,18 @@ class createUserViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var createUserNameTextField: UITextField!
     @IBOutlet weak var createUserEmailTextField: UITextField!
     @IBOutlet weak var createUserPasswordTextField: UITextField!
+    @IBOutlet weak var termsLabel: UILabel!
+    var stateOfCheckBox = false
     
+    @IBAction func onCheckBoxTap(_ sender: UIButton) {
+        if sender.isSelected {
+            sender.isSelected = false
+            stateOfCheckBox = false
+        } else {
+            sender.isSelected = true
+            stateOfCheckBox = true
+        }
+    }
     @IBOutlet weak var createButtonLabel: UIButton!
     @IBOutlet weak var loginButtonLabel: UIButton!
     
@@ -28,6 +39,7 @@ class createUserViewController: UIViewController, UITextFieldDelegate {
         createUserPasswordTextField.delegate = self
         createButtonLabel.layer.cornerRadius = 20
         loginButtonLabel.layer.cornerRadius = 20
+        termsLabel.layer.cornerRadius = 20
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(createUserViewController.viewTapped(gestureRecognizer:)))
         
@@ -75,23 +87,32 @@ class createUserViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onUserCreateTap(_ sender: Any) {
-        Auth.auth().createUser(withEmail: createUserEmailTextField.text!, password: createUserPasswordTextField.text!) { authResult, error in
-            if authResult == nil {
-                var errorAlert = UIAlertController.init(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-                errorAlert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel, handler: nil))
-                self.present(errorAlert, animated: true, completion: nil)
+        if stateOfCheckBox == true && createUserNameTextField.text != "" && createUserPasswordTextField.text != "" && createUserPasswordTextField.text != "" {
+            Auth.auth().createUser(withEmail: createUserEmailTextField.text!, password: createUserPasswordTextField.text!) { authResult, error in
+                print("****\(authResult)")
+                if authResult == nil {
+                    var errorAlert = UIAlertController.init(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    errorAlert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel, handler: nil))
+                    self.present(errorAlert, animated: true, completion: nil)
+                }
+                else {
+                    print(authResult)
+                    var ref: DatabaseReference!
+                    ref = Database.database().reference()
+                    var user = ["username": self.createUserEmailTextField.text!, "fullname": self.createUserNameTextField.text!, "itineraries": []] as [String : Any]
+                    ref.child("users").child(authResult!.user.uid).updateChildValues(user)
+                    //ref.child("itineraries").child("0").setValue(["travellingTo": "Japan"])
+                }
             }
-            else {
-                print(authResult)
-                var ref: DatabaseReference!
-                ref = Database.database().reference()
-                var user = ["username": self.createUserEmailTextField.text!, "fullname": self.createUserNameTextField.text!, "itineraries": []] as [String : Any]
-                ref.child("users").child(authResult!.user.uid).updateChildValues(user)
-                //ref.child("itineraries").child("0").setValue(["travellingTo": "Japan"])
-            }
+            performSegue(withIdentifier: "createUsertoHomeSegue", sender: self)
+        } else {
+            var errorAlertCheck = UIAlertController.init(title: "Error", message: "Please check to make sure all fields are complete and that you have agreed to the terms", preferredStyle: .alert)
+            errorAlertCheck.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel, handler: nil))
+            self.present(errorAlertCheck, animated: true, completion: nil)
         }
-        performSegue(withIdentifier: "createUsertoHomeSegue", sender: self)
     }
+        
+
     
 }
 

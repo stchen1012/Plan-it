@@ -127,8 +127,8 @@ class itineraryDetailsViewController: UIViewController, UITableViewDelegate, UIT
 
 
     @IBAction func onSaveTap(_ sender: Any) {
-        if leavingFrom == "" || travelCountry == "" || leavingDate == nil || listOfActivities.count == 0 {
-            let alertController = UIAlertController(title: "Alert", message: "Please go back and enter where you are leaving from, traveling to, departing date and select your activities", preferredStyle: .alert)
+        if leavingFrom == "" || travelCountry == "" || leavingDate == nil || listOfActivities.count == 0 || activityObjectCollection.count == 0 {
+            let alertController = UIAlertController(title: "Error", message: "Please go back and enter where you are leaving from, traveling to, departing date and select your activities or try a different location", preferredStyle: .alert)
             self.present(alertController, animated: true, completion: nil)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         } else {
