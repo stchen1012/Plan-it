@@ -23,6 +23,12 @@ class activitiesViewController: UIViewController {
         super.viewDidLoad()
         
         generateLabel.layer.cornerRadius = 20
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        gradientLayer.colors = [UIColor.darkGray.cgColor, UIColor.white.cgColor]
+        
+        self.view.layer.insertSublayer(gradientLayer, at:0)
     }
     
 

@@ -29,6 +29,14 @@ class signInViewController: UIViewController, UITextFieldDelegate {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(signInViewController.viewTapped(gestureRecognizer:)))
         
         view.addGestureRecognizer(tapGesture)
+        
+        let gradientLayer = CAGradientLayer()
+        
+        gradientLayer.frame = self.view.bounds
+        
+        gradientLayer.colors = [UIColor.systemTeal.cgColor, UIColor.white.cgColor]
+        
+        self.view.layer.insertSublayer(gradientLayer, at:0)
     }
     
     @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {

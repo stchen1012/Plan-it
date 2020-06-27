@@ -45,6 +45,11 @@ class createUserViewController: UIViewController, UITextFieldDelegate {
         
         view.addGestureRecognizer(tapGesture)
         
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        gradientLayer.colors = [UIColor.systemTeal.cgColor, UIColor.white.cgColor]
+        self.view.layer.insertSublayer(gradientLayer, at:0)
+        
         //SET VALUES IN FIREBASE
         //ref.child("itineraries").child("0").setValue(["travellingTo": "Japan"])
         
@@ -87,7 +92,7 @@ class createUserViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onUserCreateTap(_ sender: Any) {
-        if stateOfCheckBox == true && createUserNameTextField.text != "" && createUserPasswordTextField.text != "" && createUserPasswordTextField.text != "" {
+        if stateOfCheckBox == true && createUserNameTextField.text != "" && createUserPasswordTextField.text != "" && createUserPasswordTextField.text?.count ?? 0 >= 6 && createUserPasswordTextField.text != "" {
             Auth.auth().createUser(withEmail: createUserEmailTextField.text!, password: createUserPasswordTextField.text!) { authResult, error in
                 print("****\(authResult)")
                 if authResult == nil {
@@ -101,12 +106,13 @@ class createUserViewController: UIViewController, UITextFieldDelegate {
                     ref = Database.database().reference()
                     var user = ["username": self.createUserEmailTextField.text!, "fullname": self.createUserNameTextField.text!, "itineraries": []] as [String : Any]
                     ref.child("users").child(authResult!.user.uid).updateChildValues(user)
+                    print(ref.child("users").child(authResult!.user.uid))
                     //ref.child("itineraries").child("0").setValue(["travellingTo": "Japan"])
                 }
             }
             performSegue(withIdentifier: "createUsertoHomeSegue", sender: self)
         } else {
-            var errorAlertCheck = UIAlertController.init(title: "Error", message: "Please check to make sure all fields are complete and that you have agreed to the terms", preferredStyle: .alert)
+            var errorAlertCheck = UIAlertController.init(title: "Error", message: "Please check to make sure all fields are complete, your password is at least 6 characters, and that you have agreed to the terms", preferredStyle: .alert)
             errorAlertCheck.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel, handler: nil))
             self.present(errorAlertCheck, animated: true, completion: nil)
         }

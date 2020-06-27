@@ -48,6 +48,11 @@ class itineraryTripsViewController: UIViewController, UICollectionViewDelegate, 
         itineraryTripsCollectionView.delegate = self
         itineraryTripsCollectionView.dataSource = self
         
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        gradientLayer.colors = [UIColor.darkGray.cgColor, UIColor.white.cgColor]
+        self.view.layer.insertSublayer(gradientLayer, at:0)
+        
         var currentDateTime = Date()
         // initialize the date formatter and set the style
         let formatter = DateFormatter.init(withFormat: "MM/dd/yyyy", locale: "")
@@ -88,8 +93,9 @@ class itineraryTripsViewController: UIViewController, UICollectionViewDelegate, 
                     self.itineraryFBActivitiesObjectArray = []
                     self.itineraryFBObjectArray.append(itineraryFBObject)
                     self.itineraryTripsCollectionView.reloadData()
-
+                    print(itineraryFBObject)
                 }
+                    
             )}
         }
     )}
